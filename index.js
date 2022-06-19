@@ -27,9 +27,3 @@ app.get("/",(req,res)=>{
 })
 
 app.listen(2200,()=>(console.log(`YOUR API RUNNING :`,2200)))
-
-https.createServer((req,res)=>{
-    if(req.url == '/'){
-        res.status(200).send(tweet)
-    }
-})
