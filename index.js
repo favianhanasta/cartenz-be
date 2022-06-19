@@ -21,12 +21,8 @@ request('https://twitter.com/elonmusk',(err,response,body)=>{
     }
 })
 
-app.get("/",(req,res)=>{
-    res.status(200)
-    .send("<h1>technical Test Scrape Elon Musk's Tweet</h1><a href='http://localhost:2200/tweet'>Tweet Here</a>")
-})
 
-app.get("/tweet",(req,res)=>{
+app.get("/",(req,res)=>{
     res.status(200).send(tweet)
 })
 
